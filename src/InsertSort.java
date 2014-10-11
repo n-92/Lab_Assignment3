@@ -13,7 +13,9 @@ public class InsertSort {
 					arr[j] = arr[j-1];
 					arr[j-1]=temp;
 				}
-				else break;
+				else{ 
+					insertSortCount++;
+					break;}
 			}
 		}
 	}
