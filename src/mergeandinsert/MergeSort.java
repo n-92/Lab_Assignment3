@@ -1,10 +1,11 @@
 package mergeandinsert;
 
 public class MergeSort {
+	
+	public static int mergeSortCount = 0;
 
-static void mergeSort(int[] arr){
-		
-		
+	static void mergeSort(int[] arr){
+			
 			if (arr.length <=1) return;
 			int mid = (arr.length)/2;
 			int[] left =new int[mid];
@@ -19,7 +20,6 @@ static void mergeSort(int[] arr){
 			mergeSort(left);
 			mergeSort(right);
 			merge(arr,left,right);
-		
 	}
 	
 	static void mergeSortOptimised(int[] arr, int threshhold){
@@ -36,8 +36,8 @@ static void mergeSort(int[] arr){
 			for (int i = mid; i< arr.length ; i++)
 				right[i-mid] = arr[i];
 			
-			mergeSortOptimised(left,left.length);
-			mergeSortOptimised(right,right.length);
+			mergeSortOptimised(left,threshhold);
+			mergeSortOptimised(right,threshhold);
 			merge(arr,left,right);
 		}
 		else{
@@ -52,6 +52,7 @@ static void mergeSort(int[] arr){
 		
 		while(l < left.length && r < right.length){
 			if (left[l] <= right[r]){
+				mergeSortCount++;
 				arr[a] = left[l];
 				l++; 
 			}else{
