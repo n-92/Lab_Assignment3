@@ -1,5 +1,3 @@
-
-
 public class InsertSort {
 	public static int insertSortCount = 0;
 	static void insertSort(int[]arr, int size){

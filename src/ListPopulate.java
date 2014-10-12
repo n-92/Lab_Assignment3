@@ -1,5 +1,3 @@
-
-
 public class ListPopulate {
 	
 	static void populate(int[] arr,int[] arrCopy,int size,int range, int min){

@@ -1,5 +1,3 @@
-
-
 public class MergeSort {
 	
 	public static int mergeSortCount = 0;
@@ -21,7 +19,6 @@ public class MergeSort {
 			mergeSort(right);
 			merge(arr,left,right);
 	}
-	
 	static void mergeSortOptimised(int[] arr, int threshhold){
 		
 		if (arr.length > threshhold){

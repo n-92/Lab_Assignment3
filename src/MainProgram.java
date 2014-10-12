@@ -1,5 +1,3 @@
-
-
 import java.util.Scanner;
 
 public class MainProgram {
@@ -10,15 +8,16 @@ public class MainProgram {
 		int S = 10; //threshold value
 		long duration_for_optimised = 0;
 		long duration_for_normal=0;
-		int count_optimised_merge = 0, count_merge = 0;
+		// variables to store the number of key comparisons done for two algorithms
+		int count_optimised_merge = 0, count_merge = 0; 
 		
 		final int min = 0;
-		final int range = 10000; //range is between min to 99999999
+		final int range = 10000; //range is between min to 9999
 		int[] numbers;
 		int[] numbersCopy;
 		int size =0;
 		
-		System.out.println("Enter the size of phoneBook");
+		System.out.println("Enter the size for random numbers");
 		Scanner scan = new Scanner(System.in);
 		size = scan.nextInt();
 		numbers = numbersCopy = new int[size];
