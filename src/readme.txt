@@ -6,3 +6,5 @@ For the duplicated array (numbersCopy[]) we apply the normal mergeSort() algorit
 
 We then compare the duration it takes for both algorithms to sort the same size of arrays and then we also 
 measure the number of key comparisons that both of them make.. 
+
+test test..

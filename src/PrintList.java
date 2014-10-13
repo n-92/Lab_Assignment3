@@ -1,5 +1,3 @@
-
-
 public class PrintList {
 	
 	static void printList(int[] arr){
